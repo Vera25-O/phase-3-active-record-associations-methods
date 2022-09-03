@@ -12,10 +12,10 @@ class Genre < ActiveRecord::Base
     self.artists.count
   end
 
-  # def all_artist_names
-  #   # return an array of strings containing every musician's name
-  #   self.all.artists.map do |artist
-  #     self.artist.name
+  def all_artist_names
+    # return an array of strings containing every musician's name
+    self.all.artists.map do |artist
+      self.artist.name
 
-  # end
+  end
 end
